@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Empresa – Portafolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header compartido -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Logo Mi Empresa" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portafolio.html" class="active">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="burger" id="btn-burger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== Contenido específico de “Portafolio” ===== -->
+  <main class="portafolio">
+    <section class="sección-portafolio">
+      <div class="container">
+        <h1>Portafolio</h1>
+        <p>Algunos de nuestros proyectos más destacados:</p>
+        <div class="galeria-grid">
+          <!-- Proyecto 1 -->
+          <div class="proyecto-item">
+            <img src="assets/images/proyecto1.jpg" alt="Proyecto 1 – Tienda en Línea" />
+            <div class="info-proyecto">
+              <h3>Tienda en Línea para Boutique</h3>
+              <p>Desarrollo full-stack (Node.js + React + Stripe) con panel de administración.</p>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="proyecto-item">
+            <img src="assets/images/proyecto2.jpg" alt="Proyecto 2 – Blog Corporativo" />
+            <div class="info-proyecto">
+              <h3>Blog Corporativo Tech</h3>
+              <p>Sitio estático en Hugo con SEO optimizado y CMS headless (Netlify CMS).</p>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="proyecto-item">
+            <img src="assets/images/proyecto3.jpg" alt="Proyecto 3 – Landing Page Startup" />
+            <div class="info-proyecto">
+              <h3>Landing Page para Startup</h3>
+              <p>Landing page one-page responsiva en HTML/CSS/Tailwind con formulario integrado.</p>
+            </div>
+          </div>
+          <!-- Agrega más .proyecto-item según necesites -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== Fin de contenido específico ===== -->
+
+  <!-- Footer compartido -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <img src="assets/images/logo.png" alt="Logo Mi Empresa" />
+        <p>© 2025 Mi Empresa. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-links">
+        <a href="quienes-somos.html">Quiénes Somos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-redes">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

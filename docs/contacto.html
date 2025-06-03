@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Empresa – Contacto</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header compartido -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Logo Mi Empresa" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <button class="burger" id="btn-burger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== Contenido específico de “Contacto” ===== -->
+  <main class="contacto">
+    <section class="sección-contacto">
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>Si tienes alguna pregunta, ¡escríbenos!</p>
+        <form id="form-contacto" action="https://formspree.io/f/tu-codigo" method="POST" class="formulario-contacto">
+          <!-- Si no tienes servidor backend, puedes usar Formspree o similar -->
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="_replyto" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-cta">Enviar</button>
+        </form>
+
+        <!-- Opción: un mapa embed -->
+        <div class="mapa-contacto">
+          <iframe
+            src="https://maps.app.goo.gl/cQzafm3hdkvZg51e6"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== Fin de contenido específico ===== -->
+
+  <!-- Footer compartido -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <img src="assets/images/logo.png" alt="Logo Mi Empresa" />
+        <p>© 2025 Mi Empresa. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-links">
+        <a href="quienes-somos.html">Quiénes Somos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-redes">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
